@@ -11,7 +11,35 @@
 		95EB0D3F1D9A2F90006D5A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB0D3E1D9A2F90006D5A93 /* main.m */; };
 		95EB0D411D9A2F90006D5A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EB0D401D9A2F90006D5A93 /* Assets.xcassets */; };
 		95EB0D441D9A2F90006D5A93 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95EB0D421D9A2F90006D5A93 /* MainMenu.xib */; };
+		95EB0D521D9A2FC1006D5A93 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95EB0D511D9A2FC1006D5A93 /* Cocoa.framework */; };
+		95EB0D581D9A2FC1006D5A93 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB0D571D9A2FC1006D5A93 /* SourceEditorExtension.m */; };
+		95EB0D5B1D9A2FC1006D5A93 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB0D5A1D9A2FC1006D5A93 /* SourceEditorCommand.m */; };
+		95EB0D5F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95EB0D4F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95EB0D5D1D9A2FC1006D5A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95EB0D2F1D9A2F90006D5A93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95EB0D4E1D9A2FC1006D5A93;
+			remoteInfo = DLInsertImportExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95EB0D631D9A2FC1006D5A93 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95EB0D5F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		95EB0D371D9A2F90006D5A93 /* DLInsertImport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLInsertImport.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +49,15 @@
 		95EB0D401D9A2F90006D5A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95EB0D431D9A2F90006D5A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		95EB0D451D9A2F90006D5A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EB0D4F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DLInsertImportExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EB0D511D9A2FC1006D5A93 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		95EB0D551D9A2FC1006D5A93 /* DLInsertImportExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DLInsertImportExtension.entitlements; sourceTree = "<group>"; };
+		95EB0D561D9A2FC1006D5A93 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		95EB0D571D9A2FC1006D5A93 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		95EB0D591D9A2FC1006D5A93 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		95EB0D5A1D9A2FC1006D5A93 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		95EB0D5C1D9A2FC1006D5A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EB0D641D9A4890006D5A93 /* DLInsertImport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DLInsertImport.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95EB0D4C1D9A2FC1006D5A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EB0D521D9A2FC1006D5A93 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				95EB0D391D9A2F90006D5A93 /* DLInsertImport */,
+				95EB0D531D9A2FC1006D5A93 /* DLInsertImportExtension */,
+				95EB0D501D9A2FC1006D5A93 /* Frameworks */,
 				95EB0D381D9A2F90006D5A93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				95EB0D371D9A2F90006D5A93 /* DLInsertImport.app */,
+				95EB0D4F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +101,7 @@
 		95EB0D391D9A2F90006D5A93 /* DLInsertImport */ = {
 			isa = PBXGroup;
 			children = (
+				95EB0D641D9A4890006D5A93 /* DLInsertImport.entitlements */,
 				95EB0D3A1D9A2F90006D5A93 /* AppDelegate.h */,
 				95EB0D3B1D9A2F90006D5A93 /* AppDelegate.m */,
 				95EB0D401D9A2F90006D5A93 /* Assets.xcassets */,
@@ -71,6 +120,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		95EB0D501D9A2FC1006D5A93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95EB0D511D9A2FC1006D5A93 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95EB0D531D9A2FC1006D5A93 /* DLInsertImportExtension */ = {
+			isa = PBXGroup;
+			children = (
+				95EB0D561D9A2FC1006D5A93 /* SourceEditorExtension.h */,
+				95EB0D571D9A2FC1006D5A93 /* SourceEditorExtension.m */,
+				95EB0D591D9A2FC1006D5A93 /* SourceEditorCommand.h */,
+				95EB0D5A1D9A2FC1006D5A93 /* SourceEditorCommand.m */,
+				95EB0D5C1D9A2FC1006D5A93 /* Info.plist */,
+				95EB0D541D9A2FC1006D5A93 /* Supporting Files */,
+			);
+			path = DLInsertImportExtension;
+			sourceTree = "<group>";
+		};
+		95EB0D541D9A2FC1006D5A93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95EB0D551D9A2FC1006D5A93 /* DLInsertImportExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +159,34 @@
 				95EB0D331D9A2F90006D5A93 /* Sources */,
 				95EB0D341D9A2F90006D5A93 /* Frameworks */,
 				95EB0D351D9A2F90006D5A93 /* Resources */,
+				95EB0D631D9A2FC1006D5A93 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				95EB0D5E1D9A2FC1006D5A93 /* PBXTargetDependency */,
 			);
 			name = DLInsertImport;
 			productName = DLInsertImport;
 			productReference = 95EB0D371D9A2F90006D5A93 /* DLInsertImport.app */;
 			productType = "com.apple.product-type.application";
+		};
+		95EB0D4E1D9A2FC1006D5A93 /* DLInsertImportExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95EB0D601D9A2FC1006D5A93 /* Build configuration list for PBXNativeTarget "DLInsertImportExtension" */;
+			buildPhases = (
+				95EB0D4B1D9A2FC1006D5A93 /* Sources */,
+				95EB0D4C1D9A2FC1006D5A93 /* Frameworks */,
+				95EB0D4D1D9A2FC1006D5A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLInsertImportExtension;
+			productName = DLInsertImportExtension;
+			productReference = 95EB0D4F1D9A2FC1006D5A93 /* DLInsertImportExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +199,17 @@
 				TargetAttributes = {
 					95EB0D361D9A2F90006D5A93 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S39R58R47Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					95EB0D4E1D9A2FC1006D5A93 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S39R58R47Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				95EB0D361D9A2F90006D5A93 /* DLInsertImport */,
+				95EB0D4E1D9A2FC1006D5A93 /* DLInsertImportExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +240,13 @@
 			files = (
 				95EB0D411D9A2F90006D5A93 /* Assets.xcassets in Resources */,
 				95EB0D441D9A2F90006D5A93 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EB0D4D1D9A2FC1006D5A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +262,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95EB0D4B1D9A2FC1006D5A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EB0D581D9A2FC1006D5A93 /* SourceEditorExtension.m in Sources */,
+				95EB0D5B1D9A2FC1006D5A93 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95EB0D5E1D9A2FC1006D5A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95EB0D4E1D9A2FC1006D5A93 /* DLInsertImportExtension */;
+			targetProxy = 95EB0D5D1D9A2FC1006D5A93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		95EB0D421D9A2F90006D5A93 /* MainMenu.xib */ = {
@@ -251,7 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DLInsertImport/DLInsertImport.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39R58R47Q;
 				INFOPLIST_FILE = DLInsertImport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dennis.DLInsertImport;
@@ -263,11 +399,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DLInsertImport/DLInsertImport.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39R58R47Q;
 				INFOPLIST_FILE = DLInsertImport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dennis.DLInsertImport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95EB0D611D9A2FC1006D5A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DLInsertImportExtension/DLInsertImportExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39R58R47Q;
+				INFOPLIST_FILE = DLInsertImportExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dennis.DLInsertImport.DLInsertImportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95EB0D621D9A2FC1006D5A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DLInsertImportExtension/DLInsertImportExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39R58R47Q;
+				INFOPLIST_FILE = DLInsertImportExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dennis.DLInsertImport.DLInsertImportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -290,6 +461,16 @@
 				95EB0D4A1D9A2F90006D5A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95EB0D601D9A2FC1006D5A93 /* Build configuration list for PBXNativeTarget "DLInsertImportExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95EB0D611D9A2FC1006D5A93 /* Debug */,
+				95EB0D621D9A2FC1006D5A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

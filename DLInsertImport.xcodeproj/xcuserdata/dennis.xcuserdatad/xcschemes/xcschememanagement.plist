@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>DLInsertImportExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>95EB0D361D9A2F90006D5A93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95EB0D4E1D9A2FC1006D5A93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
